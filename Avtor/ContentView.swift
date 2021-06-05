@@ -83,12 +83,12 @@ struct ContentView: View {
                     Text("Already have an account?")
                         .font(.custom("Arial", size: 12))
                         .foregroundColor(.black)
-                        .padding(.top,10)
+                        .padding(.top,11)
                     
                     Text("Login")
                         .font(.custom("Arial", size: 12))
                         .foregroundColor(.blue)
-                        .padding(.top,10)
+                        .padding(.top,11)
                 }
                 
             }
