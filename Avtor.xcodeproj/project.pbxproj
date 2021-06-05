@@ -59,6 +59,35 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CE372434266BB267005492EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE80D123266A4A33008C2CB6 /* SignInView.swift */,
+				CE372428266BA0A3005492EC /* RootView.swift */,
+				CE37242D266BA418005492EC /* MainView.swift */,
+				CE372431266BAB0B005492EC /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE372436266BB284005492EC /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				CE372422266B8E6C005492EC /* UserObject.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		CE372438266BB2B2005492EC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE80D121266A4A33008C2CB6 /* AvtorApp.swift */,
+				CE372425266B9C25005492EC /* Launch Screen.storyboard */,
+				CE80D125266A4A35008C2CB6 /* Assets.xcassets */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		CE80D115266A4A33008C2CB6 = {
 			isa = PBXGroup;
 			children = (
@@ -80,14 +109,9 @@
 		CE80D120266A4A33008C2CB6 /* Avtor */ = {
 			isa = PBXGroup;
 			children = (
-				CE80D121266A4A33008C2CB6 /* AvtorApp.swift */,
-				CE80D123266A4A33008C2CB6 /* SignInView.swift */,
-				CE372428266BA0A3005492EC /* RootView.swift */,
-				CE37242D266BA418005492EC /* MainView.swift */,
-				CE372431266BAB0B005492EC /* HomeView.swift */,
-				CE372425266B9C25005492EC /* Launch Screen.storyboard */,
-				CE372422266B8E6C005492EC /* UserObject.swift */,
-				CE80D125266A4A35008C2CB6 /* Assets.xcassets */,
+				CE372438266BB2B2005492EC /* Common */,
+				CE372434266BB267005492EC /* View */,
+				CE372436266BB284005492EC /* Object */,
 				CE80D12A266A4A35008C2CB6 /* Info.plist */,
 				CE80D127266A4A35008C2CB6 /* Preview Content */,
 			);
