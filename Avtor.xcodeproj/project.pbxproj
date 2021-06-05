@@ -12,6 +12,7 @@
 		CE372426266B9C25005492EC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE372425266B9C25005492EC /* Launch Screen.storyboard */; };
 		CE372429266BA0A3005492EC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE372428266BA0A3005492EC /* RootView.swift */; };
 		CE37242E266BA418005492EC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37242D266BA418005492EC /* MainView.swift */; };
+		CE372432266BAB0B005492EC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE372431266BAB0B005492EC /* HomeView.swift */; };
 		CE80D122266A4A33008C2CB6 /* AvtorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80D121266A4A33008C2CB6 /* AvtorApp.swift */; };
 		CE80D124266A4A33008C2CB6 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80D123266A4A33008C2CB6 /* SignInView.swift */; };
 		CE80D126266A4A35008C2CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE80D125266A4A35008C2CB6 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		CE372425266B9C25005492EC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CE372428266BA0A3005492EC /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		CE37242D266BA418005492EC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CE372431266BAB0B005492EC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CE80D11E266A4A33008C2CB6 /* Avtor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avtor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE80D121266A4A33008C2CB6 /* AvtorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvtorApp.swift; sourceTree = "<group>"; };
 		CE80D123266A4A33008C2CB6 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				CE80D123266A4A33008C2CB6 /* SignInView.swift */,
 				CE372428266BA0A3005492EC /* RootView.swift */,
 				CE37242D266BA418005492EC /* MainView.swift */,
+				CE372431266BAB0B005492EC /* HomeView.swift */,
 				CE372425266B9C25005492EC /* Launch Screen.storyboard */,
 				CE372422266B8E6C005492EC /* UserObject.swift */,
 				CE80D125266A4A35008C2CB6 /* Assets.xcassets */,
@@ -230,6 +233,7 @@
 				CE80D124266A4A33008C2CB6 /* SignInView.swift in Sources */,
 				CE80D122266A4A33008C2CB6 /* AvtorApp.swift in Sources */,
 				CE372429266BA0A3005492EC /* RootView.swift in Sources */,
+				CE372432266BAB0B005492EC /* HomeView.swift in Sources */,
 				CE37242E266BA418005492EC /* MainView.swift in Sources */,
 				CE372423266B8E6C005492EC /* UserObject.swift in Sources */,
 			);
