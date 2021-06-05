@@ -63,7 +63,6 @@ struct ContentView: View {
                         .padding()
                     TextField("********",text:$npas)
                         .font(.custom("Arial", size:16))
-                        .padding()
                 }.border(Color.gray)
                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color(UIColor.gray).opacity(1),lineWidth:1))
                 .padding(.horizontal,20)
@@ -84,11 +83,12 @@ struct ContentView: View {
                     Text("Already have an account?")
                         .font(.custom("Arial", size: 12))
                         .foregroundColor(.black)
+                        .padding(.top,10)
                     
                     Text("Login")
                         .font(.custom("Arial", size: 12))
                         .foregroundColor(.blue)
-                        .padding()
+                        .padding(.top,10)
                 }
                 
             }
