@@ -18,6 +18,16 @@ struct HomeView: View {
                 Image(systemName: "bell")
                 
             }.padding()
+            ScrollView(.horizontal, showsIndicators: false, content: {
+                HStack {
+                ForEach(0...15, id: \.self) { _ in
+                    Image("Pic")
+                        .resizable()
+                        .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                }
+                }
+            })
+        Spacer()
         }
         }
     }
