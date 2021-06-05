@@ -6,10 +6,15 @@
 //
 
 import SwiftUI
+import Alamofire
+import SwiftyJSON
 
-struct ContentView: View {
+struct SignInView: View {
     @State var nmail = ""
     @State var npas = ""
+    @ObservedObject var userObject = UserObject()
+    @Binding var page: Int
+
     var body: some View {
         
         ZStack {
@@ -50,6 +55,8 @@ struct ContentView: View {
                 
                 Text("PASSWORD")
                     .bold()
+                    .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                    .disableAutocorrection(true)
                     .frame(width: 350, height: 0, alignment: .leading)
                     .font(.custom("Arial", size: 12))
                     .foregroundColor(.black)
@@ -59,19 +66,21 @@ struct ContentView: View {
                     
                     Image(systemName: "lock")
                         .font(.custom("Arial", size: 20))
+                        .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.gray)
                         .padding()
-                    TextField("********",text:$npas)
+                    SecureField("********",text:$npas)
                         .font(.custom("Arial", size:16))
                 }.border(Color.gray)
                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color(UIColor.gray).opacity(1),lineWidth:1))
                 .padding(.horizontal,20)
                 
                 Button(action: {
-                    
+                    userObject.login(email: nmail, password: npas)
+                    page = 2
                 }
                 , label: {
-                    Text("SIGN UP")
+                    Text("SIGN IN")
                         .frame(width: 350, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .font(.custom("Arial", size: 12))
                         .foregroundColor(.white)
@@ -100,6 +109,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SignInView(page: .constant(1))
     }
 }

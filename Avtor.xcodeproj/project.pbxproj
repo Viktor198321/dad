@@ -3,23 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		569FBC1830C1C211B507DBBA /* Pods_Avtor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A5A489A90744032558C181 /* Pods_Avtor.framework */; };
+		CE372423266B8E6C005492EC /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE372422266B8E6C005492EC /* UserObject.swift */; };
+		CE372426266B9C25005492EC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE372425266B9C25005492EC /* Launch Screen.storyboard */; };
+		CE372429266BA0A3005492EC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE372428266BA0A3005492EC /* RootView.swift */; };
+		CE37242E266BA418005492EC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37242D266BA418005492EC /* MainView.swift */; };
 		CE80D122266A4A33008C2CB6 /* AvtorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80D121266A4A33008C2CB6 /* AvtorApp.swift */; };
-		CE80D124266A4A33008C2CB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80D123266A4A33008C2CB6 /* ContentView.swift */; };
+		CE80D124266A4A33008C2CB6 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80D123266A4A33008C2CB6 /* SignInView.swift */; };
 		CE80D126266A4A35008C2CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE80D125266A4A35008C2CB6 /* Assets.xcassets */; };
 		CE80D129266A4A35008C2CB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE80D128266A4A35008C2CB6 /* Preview Assets.xcassets */; };
+		CE80D137266B659E008C2CB6 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CE80D136266B659E008C2CB6 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65A5A489A90744032558C181 /* Pods_Avtor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Avtor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D0528CE27E17C1451D8CFFD /* Pods-Avtor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avtor.debug.xcconfig"; path = "Target Support Files/Pods-Avtor/Pods-Avtor.debug.xcconfig"; sourceTree = "<group>"; };
+		CE372422266B8E6C005492EC /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
+		CE372425266B9C25005492EC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CE372428266BA0A3005492EC /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CE37242D266BA418005492EC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CE80D11E266A4A33008C2CB6 /* Avtor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avtor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE80D121266A4A33008C2CB6 /* AvtorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvtorApp.swift; sourceTree = "<group>"; };
-		CE80D123266A4A33008C2CB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE80D123266A4A33008C2CB6 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		CE80D125266A4A35008C2CB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE80D128266A4A35008C2CB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE80D12A266A4A35008C2CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA9920504319274FEAFD00BC /* Pods-Avtor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avtor.release.xcconfig"; path = "Target Support Files/Pods-Avtor/Pods-Avtor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE80D137266B659E008C2CB6 /* SwiftyJSON in Frameworks */,
+				569FBC1830C1C211B507DBBA /* Pods_Avtor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185831A76612FEBA794E9558 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D0528CE27E17C1451D8CFFD /* Pods-Avtor.debug.xcconfig */,
+				EA9920504319274FEAFD00BC /* Pods-Avtor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE80D115266A4A33008C2CB6 = {
 			isa = PBXGroup;
 			children = (
 				CE80D120266A4A33008C2CB6 /* Avtor */,
 				CE80D11F266A4A33008C2CB6 /* Products */,
+				185831A76612FEBA794E9558 /* Pods */,
+				D660A05BB57C0133789D411B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +79,11 @@
 			isa = PBXGroup;
 			children = (
 				CE80D121266A4A33008C2CB6 /* AvtorApp.swift */,
-				CE80D123266A4A33008C2CB6 /* ContentView.swift */,
+				CE80D123266A4A33008C2CB6 /* SignInView.swift */,
+				CE372428266BA0A3005492EC /* RootView.swift */,
+				CE37242D266BA418005492EC /* MainView.swift */,
+				CE372425266B9C25005492EC /* Launch Screen.storyboard */,
+				CE372422266B8E6C005492EC /* UserObject.swift */,
 				CE80D125266A4A35008C2CB6 /* Assets.xcassets */,
 				CE80D12A266A4A35008C2CB6 /* Info.plist */,
 				CE80D127266A4A35008C2CB6 /* Preview Content */,
@@ -69,6 +99,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D660A05BB57C0133789D411B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65A5A489A90744032558C181 /* Pods_Avtor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,15 +114,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE80D12D266A4A35008C2CB6 /* Build configuration list for PBXNativeTarget "Avtor" */;
 			buildPhases = (
+				341A0E240FB063E2024FE670 /* [CP] Check Pods Manifest.lock */,
 				CE80D11A266A4A33008C2CB6 /* Sources */,
 				CE80D11B266A4A33008C2CB6 /* Frameworks */,
 				CE80D11C266A4A33008C2CB6 /* Resources */,
+				2EFB1F1F83CEEE4CBA4501B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Avtor;
+			packageProductDependencies = (
+				CE80D136266B659E008C2CB6 /* SwiftyJSON */,
+			);
 			productName = Avtor;
 			productReference = CE80D11E266A4A33008C2CB6 /* Avtor.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +155,9 @@
 				Base,
 			);
 			mainGroup = CE80D115266A4A33008C2CB6;
+			packageReferences = (
+				CE80D135266B659E008C2CB6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = CE80D11F266A4A33008C2CB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE372426266B9C25005492EC /* Launch Screen.storyboard in Resources */,
 				CE80D129266A4A35008C2CB6 /* Preview Assets.xcassets in Resources */,
 				CE80D126266A4A35008C2CB6 /* Assets.xcassets in Resources */,
 			);
@@ -133,13 +180,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EFB1F1F83CEEE4CBA4501B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Avtor/Pods-Avtor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Avtor/Pods-Avtor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Avtor/Pods-Avtor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		341A0E240FB063E2024FE670 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Avtor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE80D11A266A4A33008C2CB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE80D124266A4A33008C2CB6 /* ContentView.swift in Sources */,
+				CE80D124266A4A33008C2CB6 /* SignInView.swift in Sources */,
 				CE80D122266A4A33008C2CB6 /* AvtorApp.swift in Sources */,
+				CE372429266BA0A3005492EC /* RootView.swift in Sources */,
+				CE37242E266BA418005492EC /* MainView.swift in Sources */,
+				CE372423266B8E6C005492EC /* UserObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +356,7 @@
 		};
 		CE80D12E266A4A35008C2CB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D0528CE27E17C1451D8CFFD /* Pods-Avtor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +378,7 @@
 		};
 		CE80D12F266A4A35008C2CB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA9920504319274FEAFD00BC /* Pods-Avtor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE80D135266B659E008C2CB6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE80D136266B659E008C2CB6 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE80D135266B659E008C2CB6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE80D116266A4A33008C2CB6 /* Project object */;
 }
