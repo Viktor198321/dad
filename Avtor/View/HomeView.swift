@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
-
+import SDWebImageSwiftUI
 struct HomeView: View {
+    @StateObject var movieObject = MovieObject()
     var body: some View {
         VStack{
             HStack{
@@ -20,16 +21,20 @@ struct HomeView: View {
             }.padding()
             ScrollView(.horizontal, showsIndicators: false, content: {
                 HStack {
-                ForEach(0...15, id: \.self) { _ in
-                    Image("Pic")
-                        .resizable()
-                        .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                }
+  //              ForEach(0...15, id: \.self) { _ in
+  //                  Image("Pic")
+   //                     .resizable()
+   //                     .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+   //             }
+                    ForEach(movieObject.posters, id: \.self) {poster in WebImage(url:URL(string:"http://cinema.areas.su/up/images/\(poster)"))}
                 }
             })
         Spacer()
         }
-        }
+        .onAppear(perform: {
+            movieObject.getMovies()
+        })
+    }
     }
 
 
