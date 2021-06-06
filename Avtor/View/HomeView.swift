@@ -26,7 +26,11 @@ struct HomeView: View {
    //                     .resizable()
    //                     .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
    //             }
-                    ForEach(movieObject.posters, id: \.self) {poster in WebImage(url:URL(string:"http://cinema.areas.su/up/images/\(poster)"))}
+                    ForEach(movieObject.posters, id: \.self) {poster in WebImage(url:URL(string:"http://cinema.areas.su/up/images/\(poster)"))
+                        .resizable()
+                        .frame(width: 75, height: 75)
+                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    }
                 }
             })
         Spacer()
